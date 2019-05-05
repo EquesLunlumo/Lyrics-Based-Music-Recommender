@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container lookup">
+    <div class="container">
+        <a href = "/" class="title-box"><img class="headphones" src="{{ url_for('static', filename='headphones.png')+'?v=1' }}">
+        <div class="container title">
+            <h1>LBMR</h1>
+            <h2>lyrics based music recommendations</h2>
+        </div></a>
+    </div>
+    <div class="container search">
+    <div class="container item">
+      {% with messages = get_flashed_messages(category_filter=["error"]) %}
+      {% for message in messages %}
+          <h3>{{ message }}</h3>
+      {% endfor %}
+      {% endwith %}
+      <a href="/" ><button id="again" >&#x21BB; Use Again?</button></a><br>
+{% endblock %}

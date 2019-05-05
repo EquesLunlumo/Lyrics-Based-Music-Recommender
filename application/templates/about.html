@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css')+'?v=1' }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')+'?v=1' }}">
+{% endblock %}
+{% block content %}
+<div class="container lookup">
+    <div class="container">
+        <a href = "/" class="title-box"><img class="headphones" src="{{ url_for('static', filename='headphones.png')+'?v=1' }}">
+        <div class="container title">
+            <h1>LBMR</h1>
+            <h2>lyrics based music recommendations</h2>
+        </div></a>
+    </div>
+    <div class="container about">
+    <div class="container item">
+      <p class="about-text"><b>How does this work?</b> <br><br>
+         LBMR implements a neural network to generate music
+         recommendations based on your favorite song's lyrical content. We measure
+         document similarity between the lyrics of an input song and the lyrics
+         of 57,000 songs on our pre-trained neural network model and give you the
+         best matches. <br><br>  This was developed by Sashi Kiran MV,
+         Yashwanth P, Sharanya for their Final year project at Sreenidhi institute of science and technology in 2019.
+         <br> <br> View LBMR’s Github <a target="_blank"  href="https://github.com/EquesLunlumo/Lyrics-Based-Music-Recommender"> here</a>. </p>
+    </div>
+{% endblock %}

@@ -1,0 +1,193 @@
+h1 {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #5157A3; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom left, #5157A3, #FF5151); /* Standard syntax (must be last) */
+  color: white;
+}
+
+.again {
+  margin: 20px;
+  border: 2px solid #FF5151;
+  box-shadow: 2px 2px #D14343;
+  width: 140px;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 12px;
+  background-color: #FF5151;
+  color: white;
+}
+
+.again:active {
+  background-color: #D14343;
+  border: 2px solid #D14343;
+}
+
+.again:focus {
+  outline: none;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.owl-carousel {
+  justify-content: center;
+}
+
+.owl-carousel img {
+  height:35%;
+  object-fit: cover;
+}
+
+.request {
+  justify-content: center;
+  align-items: center;
+}
+
+.request img {
+  height: 30%;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.req-album {
+  align-items: center;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.owl-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-direction: column;
+}
+
+audio {
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-preview {
+  width: 40%;
+  margin: 30px;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  margin: 1px 7px 2px;
+  transition: .5s ease;
+  background-color: #F6AE2D;
+}
+
+.recs:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+
+p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#full-overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#full-overlay-content{
+  border-radius: 12px;
+  display: flex;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: black;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.image-button {
+  border: none;
+  background-color: transparent;
+}
+
+.overlay-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p #full-overlay-content {
+  font-size: 10px;
+}
+
+.overlay-text {
+  flex-direction: column;
+}
+
+.headphones {
+    height: 40px;
+    margin-right: 7px;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+    text-decoration: none;
+}
